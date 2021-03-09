@@ -1,25 +1,24 @@
 import 'dart:io';
-import 'package:flutter/material.dart';
 
 class MediaInfo {
-  String path;
-  String title;
-  String author;
-  int width;
-  int height;
+  late String path;
+  String? title;
+  String? author;
+  int? width;
+  int? height;
 
   /// [Android] API level 17
-  int orientation;
+  int? orientation;
 
   /// bytes
-  int filesize; // filesize
+  int? filesize; // filesize
   /// microsecond
-  double duration;
-  bool isCancel;
-  File file;
+  double? duration;
+  bool? isCancel;
+  File? file;
 
   MediaInfo({
-    @required this.path,
+    required this.path,
     this.title,
     this.author,
     this.width,
